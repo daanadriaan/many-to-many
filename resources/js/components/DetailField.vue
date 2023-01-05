@@ -16,7 +16,7 @@
         <Link
           v-for="(resource, index) in field.value"
           :key="index"
-          :href="`/nova/resources/${field.resourceName}/${resource.id}`"
+          :href="`/admin/resources/${field.resourceName}/${resource.id}`"
           :data="{
             resourceName: field.resourceName,
             resourceId: resource.id,
@@ -67,7 +67,7 @@
                   {{ __("Close") }}
                 </button>
                 <Link
-				:href="`/nova/resources/${field.resourceName}/${display.id}`"
+				:href="`/admin/resources/${field.resourceName}/${display.id}`"
                   :component="'detail'"
                   :data="{
                     resourceName: field.resourceName,
